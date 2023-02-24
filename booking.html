@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Hotel Booking</title>
+  </head>
+  <body style="margin: 10%">
+    <form>
+      <label for="name">Enter Name:</label>
+      <input
+        id="name"
+        type="text"
+        placeholder="name"
+        name="name"
+        maxlength="10"
+      />
+
+      <label for="pwd">Enter Password:</label>
+      <input
+        id="pwd"
+        type="password"
+        placeholder="password"
+        name="password"
+        disabled
+      />
+
+      <label for="age">Enter age:</label>
+      <input
+        id="age"
+        type="number"
+        placeholder="age"
+        name="age"
+        min="16"
+        max="60"
+        step="2"
+      />
+
+      <label for="date">Enter date:</label>
+      <input id="date" type="date" name="date" min="2023-02-24" />
+
+      <label for="adr">Upload Aadhar:</label>
+      <input id="adr" type="file" name="adr" multiple accept=".pdf" />
+      <br />
+      <label for="vip">VIP</label>
+      <input id="vip" type="radio" value="VIP" name="suite" />
+      <label for="bs">Bussiness</label>
+      <input id="bs" type="radio" value="Bussiness" name="suite" />
+      <label for="gn">General</label>
+      <input id="gn" type="radio" value="General" name="suite" />
+      <br />
+      <label for="pd">Pick & Drop</label>
+      <input
+        id="pd"
+        type="checkbox"
+        value="Pick And Drop"
+        name="pick and drop"
+        checked
+      />
+      <label for="rt">Rental TAXI</label>
+      <input id="rt" type="checkbox" value="Rental Taxi" name="Rental Taxi" />
+      <label for="sw">Sea View</label>
+      <input id="sw" type="checkbox" value="Sea View" name="sea view" />
+      <select id="locations" name="locations">
+        <option value="">Select</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Bengaluru">Bengaluru</option>
+        <option value="Mumbai">Mumbai</option>
+      </select>
+      <input type="color" name="color"/>  
+      <input type="submit" value="Book" />
+    </form>
+    <label for="ta">Address:</label>
+    <textarea id="ta" rows="5" disabled>
+      Hyderabad, madhapur , rd 35
+    </textarea>
+  </body>
+</html>
