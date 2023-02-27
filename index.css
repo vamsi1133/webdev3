@@ -4,3 +4,96 @@ td {
   border: 1px solid black;
   border-collapse: collapse;
 }
+tr:nth-child(even) {
+  background-color: rgb(167, 167, 25);
+}
+
+p {
+  color: gray;
+  font-style: italic;
+  border: 2px solid white;
+}
+
+footer {
+  height: 200px;
+  width: 200px;
+  background-color: azure;
+  overflow: auto;
+  float: right;
+}
+
+#paraid {
+  color: rgb(230, 211, 49);
+  font-weight: bold;
+  line-height: 50px;
+}
+#paraid:hover {
+  background-color: rgb(49, 230, 176);
+}
+
+.paracolor {
+  color: red;
+  background-color: rgb(164, 255, 164);
+  font-family: cursive;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.paracolor::first-letter {
+  font-size: 24px;
+  color: black;
+}
+
+.para2 {
+  color: brown !important;
+  color: rgb(212, 56, 69) !important;
+  text-decoration: underline;
+}
+
+.boxmodel {
+  padding: 10px 15px;
+  border: solid 2px brown;
+  background: yellow;
+  margin: 8px 0px 8px 10px;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+  background: url("./assets/tajhotel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.positions {
+  position: absolute;
+  bottom: 120px;
+  right: 0;
+}
+
+.positions button {
+  background-color: red;
+  height: 25px;
+}
+
+.franchise {
+  background: yellow;
+  height: 100px;
+  position: relative;
+  top: 100px;
+  padding: 10px;
+  z-index: -1;
+}
+
+.combi {
+  background-color: white;
+}
+
+.combi > span {
+  color: red;
+}
+
+.combi span {
+  font-size: 24px;
+  font-weight: bold;
+}

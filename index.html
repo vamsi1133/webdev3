@@ -5,9 +5,20 @@
     <meta name="author" content="vamsi" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .internalstyle {
+        background-color: red;
+      }
+    </style>
   </head>
-  <body style="margin: 3%">
-    <h1 id="'firstHeading">Welcome to My Hotel</h1>
+  <body style="padding: 5%">
+    <h1 class="internalstyle" id="firstHeading">Welcome to My Hotel</h1>
     <img
       src="./assets/tajhotel.jpg"
       height="60px"
@@ -15,9 +26,13 @@
       alt="hotelimg"
     />
     <h2 class="myclass">Hotel Hyderabad</h2>
-    <a href="./booking.html"><button>Booking</button></a>
-    <h5>Our Franchises</h5>
-    <p class="myclass">
+    <div style="position: relative">
+      <a class="positions" href="./booking.html">
+        <button>Booking</button>
+      </a>
+    </div>
+    <h5 class="franchise">Our Franchises</h5>
+    <p class="paracolor">
       Welcome to our <strong>luxurious 5-star hotel</strong> located in the
       vibrant city of
       <a href="https://en.wikipedia.org/wiki/Hyderabad" target="_blank">
@@ -31,13 +46,21 @@
       contemporary style that blends traditional Indian motifs with modern
       design elements.
     </p>
-    <p>
-      As a 5-star hotel, we offer a wide range of amenities to our guests. Our
-      facilities include a world-class restaurant serving delicious local and
-      international cuisine, a fully equipped fitness center, a refreshing
-      swimming pool, and a relaxing spa where you can unwind after a busy day.
-    </p>
-    <p>
+    <div class="combi">
+      <span>child</span>
+      <div>
+        <span>desc</span>
+        <p class="boxmodel">
+          As a 5-star hotel, we offer a wide range of amenities to our guests.
+          Our facilities include a world-class restaurant serving delicious
+          local and international cuisine, a fully equipped fitness center, a
+          refreshing swimming pool, and a relaxing spa where you can unwind
+          after a busy day.
+        </p>
+      </div>
+    </div>
+
+    <p class="paracolor para2" id="paraid" style="color: blue">
       <i>Our commitment to excellence is reflected in our 5-star rating</i>,
       which is a testament to our high standards of service, luxury, and
       comfort. Whether you are visiting Hyderabad for business or pleasure, our
@@ -56,7 +79,7 @@
       width="400px"
       alt="hotelimg"
     />
-    <div style="background-color: #ecf2ff">
+    <div class="paracolor">
       <ol type="a">
         <li>VIP Suites</li>
         <li>Bussiness Suites</li>
@@ -69,7 +92,14 @@
       </ul>
     </div>
 
-    <table style="background-color: #fefbe9; width: 100%">
+    <table
+      style="
+        background-color: #fefbe9;
+        width: 100%;
+        max-width: 1000px;
+        min-width: 500px;
+      "
+    >
       <tr>
         <th>SNo</th>
         <th colspan="2">Suite</th>
@@ -103,7 +133,7 @@
         </tr>
       </tbody>
     </table>
-<!-- 
+    <!-- 
     <div>
       Thank you for choosing our hotel application for your stay in Hyderabad.
       We hope you had a comfortable and enjoyable experience with us. For any
