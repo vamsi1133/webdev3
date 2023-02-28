@@ -1,99 +1,64 @@
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.788), rgba(19, 18, 26, 0.719)),
+    url("./assets/tajhotel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ecf9ff;
+  text-align: center;
+  font-size: 18px;
+  padding: 0 3% 3% 3%;
+}
+a {
+  color: #ecf9ff;
+}
 table,
 th,
 td {
-  border: 1px solid black;
+  border: 1px solid #ecf9ff;
   border-collapse: collapse;
 }
-tr:nth-child(even) {
-  background-color: rgb(167, 167, 25);
-}
-
-p {
-  color: gray;
-  font-style: italic;
-  border: 2px solid white;
-}
-
 footer {
-  height: 200px;
-  width: 200px;
-  background-color: azure;
-  overflow: auto;
-  float: right;
+  margin-top: 15px;
 }
-
-#paraid {
-  color: rgb(230, 211, 49);
-  font-weight: bold;
-  line-height: 50px;
-}
-#paraid:hover {
-  background-color: rgb(49, 230, 176);
-}
-
-.paracolor {
-  color: red;
-  background-color: rgb(164, 255, 164);
-  font-family: cursive;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.paracolor::first-letter {
-  font-size: 24px;
-  color: black;
-}
-
-.para2 {
-  color: brown !important;
-  color: rgb(212, 56, 69) !important;
-  text-decoration: underline;
-}
-
-.boxmodel {
-  padding: 10px 15px;
-  border: solid 2px brown;
-  background: yellow;
-  margin: 8px 0px 8px 10px;
-}
-
-body {
-  font-family: "Roboto Condensed", sans-serif;
-  text-align: center;
-  background: url("./assets/tajhotel.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+table {
+  width: 100%;
 }
 
 .positions {
   position: absolute;
-  bottom: 120px;
-  right: 0;
+  right: 10px;
+  bottom: 80px;
+}
+.positions > button {
+  height: 40px;
+  width: 80px;
 }
 
-.positions button {
-  background-color: red;
-  height: 25px;
+.flexdemo {
+  display: flex;
+  justify-content: space-evenly;
 }
-
-.franchise {
-  background: yellow;
+.flexdemo > div {
+  width: 100%;
   height: 100px;
-  position: relative;
-  top: 100px;
-  padding: 10px;
-  z-index: -1;
+  margin: 0 5px;
+  background: #f99417;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formclass {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
 }
 
-.combi {
-  background-color: white;
+.formclass > div {
+  margin: 8px 0;
 }
 
-.combi > span {
-  color: red;
-}
-
-.combi span {
-  font-size: 24px;
-  font-weight: bold;
+.formclass .radioinputs {
+  display: flex;
+  margin: 5px 0px;
 }
